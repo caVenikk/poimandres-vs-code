@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>poimandres-vs-code</id>
+    <version>1.0.0</version>
+
+    <name>Poimandres (VS Code)</name>
+    <category>UI</category>
+
+    <idea-version since-build="241" until-build="243.*"/>
+    <vendor email="lospok10@gmail.com" url="https://github.com/caVenikk">caVenikk</vendor>
+
+    <description><![CDATA[
+    Unofficial <a href="https://github.com/drcmda/poimandres-theme">Poimandres</a> theme
+    (primarily for Python, HTML, CSS, JS, TS).<br>
+    Tried to make it as close to the VS Code theme as possible (with some minor changes).<br>
+    <br>
+    Based on other unofficial <a href="https://plugins.jetbrains.com/plugin/21121-poimandres-theme">Poimandres</a> theme.
+  ]]></description>
+
+    <change-notes><![CDATA[
+    Initial release of the theme.
+  ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="poimandres-vs-code" path="/theme/poimandresvscode.theme.json"/>
+    </extensions>
+</idea-plugin>
